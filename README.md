@@ -1,4 +1,4 @@
-# Python Download Utility
+# Glyzo download manager
 
 This utility allows you to download files and videos from the internet easily.
 
