@@ -68,3 +68,10 @@ These libraries are automatically installed when you run the `install_dependenci
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Use
+
+you can download porn video with this script
+   ```bash
+   python gdl.py -o <video URL>
+   ```
