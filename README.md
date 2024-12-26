@@ -1,6 +1,8 @@
 # Glyzo download manager
-
 This utility allows you to download files and videos from the internet easily.
+
+### 2.4
+fix bug in 2.4
 
 ## Features
 
