@@ -85,7 +85,7 @@ def download_video(url, directory):
 def show_menu():
     print(f"{PINK}1. Download a Single Link{RESET}")
     print(f"{PINK}2. Download Multiple Links from a File{RESET}")
-    print(f"{PINK}3. Download Video from Supported Platforms (Instagram, Aparat, Pornhub){RESET}")
+    print(f"{PINK}3. Download Video from Supported Platforms (Instagram, Aparat and ...){RESET}")
     print(f"{PINK}4. Exit{RESET}")
     choice = input(f"{PINK}Choose an option (1/2/3/4): {RESET}")
     return choice
