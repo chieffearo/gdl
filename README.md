@@ -16,7 +16,7 @@ fix bug in 2.4
 
    ```bash
    git clone https://github.com/chieffearo/gdl.git
-   cd python-download-utility
+   cd gdl-main
    ```
 
 2. Install the required dependencies:
