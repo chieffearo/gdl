@@ -4,6 +4,8 @@ import os
 from tkinter import Tk, filedialog
 import yt_dlp
 import argparse
+import signal
+import sys
 
 BLACK = "\033[30m"
 PINK = "\033[95m"
@@ -20,7 +22,7 @@ def print_logo():
  //********  ***  **      ******//****** 
   ////////  ///  //      //////  //////  
 
-             Version 2.0 Beta (creat by CHIƎF)
+             Version 2.4 (creat by CHIƎF)
     """
     print(f"{PINK}{logo}{RESET}")
 
@@ -41,7 +43,20 @@ def select_file():
     )
     return file_path
 
+def handle_sigint_for_file(signum, frame):
+    print(f"\n{PINK}File download canceled by user.{RESET}")
+    sys.exit(0)
+
+def handle_sigint_for_textfile(signum, frame):
+    print(f"\n{PINK}Download from file canceled by user.{RESET}")
+    sys.exit(0)
+
+def handle_sigint_for_video(signum, frame):
+    print(f"\n{PINK}Video download canceled by user.{RESET}")
+    sys.exit(0)
+
 def download_file(url, directory):
+    signal.signal(signal.SIGINT, handle_sigint_for_file)
     local_filename = url.split("/")[-1]
     filepath = os.path.join(directory, local_filename)
     response = requests.get(url, stream=True)
@@ -62,6 +77,7 @@ def download_file(url, directory):
     print(f"{PINK}Downloaded: {local_filename}{RESET}")
 
 def download_from_file(file_path, directory):
+    signal.signal(signal.SIGINT, handle_sigint_for_textfile)
     with open(file_path, 'r') as file:
         links = file.readlines()
     for link in links:
@@ -70,6 +86,7 @@ def download_from_file(file_path, directory):
             download_file(link, directory)
 
 def download_video(url, directory):
+    signal.signal(signal.SIGINT, handle_sigint_for_video)
     ydl_opts = {
         'outtmpl': os.path.join(directory, '%(title)s.%(ext)s'),
         'format': 'best',
@@ -155,4 +172,5 @@ def main():
                 print(f"{BLACK}Invalid option! Please try again.{RESET}")
 
 if __name__ == "__main__":
+    signal.signal(signal.SIGINT, lambda signum, frame: sys.exit(0))
     main()
