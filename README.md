@@ -1,5 +1,4 @@
 <p align="center">
-    <img src="https://i.imgur.com/sZqK5VR.png">
   <h1 align="center">Glyzo Download Manager </h1>
   <p align="center">This utility allows you to download files and videos from the internet easily</p>
   <p align="center">
