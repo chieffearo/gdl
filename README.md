@@ -11,8 +11,6 @@
   </p>
 </p>
 
-### 2.4
-fix bug in 2.4
 
 ## Features
 
@@ -90,3 +88,6 @@ you can download porn video with this script
 ```bash
 git clone https://github.com/chieffearo/gdl.git && cd gdl && pip install -r requirements.txt && python gdl.py
 ```
+
+#### GDLM is coming soon 
+Glyzo Download Manager for Mobile
