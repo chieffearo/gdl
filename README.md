@@ -5,7 +5,7 @@
     <a href="/LICENSE.md">
       <img src="https://img.shields.io/badge/license-APG-blue.svg">
     </a>
-    <a href="https://github.com/htrgouvea/nipe/releases">
+    <a href="https://github.com/chieffearo/gdl/releases">
       <img src="https://img.shields.io/badge/version-2.4-green.svg">
     </a>
   </p>
