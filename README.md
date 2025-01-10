@@ -3,7 +3,7 @@
   <p align="center">This utility allows you to download files and videos from the internet easily</p>
   <p align="center">
     <a href="/LICENSE.md">
-      <img src="https://img.shields.io/badge/license-APG-blue.svg">
+      <img src="https://img.shields.io/badge/license-APGL-blue.svg">
     </a>
     <a href="https://github.com/chieffearo/gdl/releases">
       <img src="https://img.shields.io/badge/version-2.4-green.svg">
