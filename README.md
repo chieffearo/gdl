@@ -1,0 +1,2 @@
+# gdl
+Glyzo Download Manager 
